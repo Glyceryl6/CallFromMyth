@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "call_from_myth:block/beech_sapling"
+  }
+}

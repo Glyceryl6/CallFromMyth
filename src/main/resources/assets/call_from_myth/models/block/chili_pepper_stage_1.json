@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "call_from_myth:block/chili_pepper_stage_1"
+  }
+}

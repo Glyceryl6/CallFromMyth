@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "call_from_myth:block/malachite_ore"
+  }
+}

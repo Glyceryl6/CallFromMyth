@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "call_from_myth:block/beech_leaves"
+  }
+}

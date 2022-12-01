@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "call_from_myth:block/henbane_stage_3"
+  }
+}

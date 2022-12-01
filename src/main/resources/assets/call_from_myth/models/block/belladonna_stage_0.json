@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "call_from_myth:block/belladonna_stage_0"
+  }
+}

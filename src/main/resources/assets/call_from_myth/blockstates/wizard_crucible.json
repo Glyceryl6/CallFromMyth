@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "filled=false": {
+      "model": "call_from_myth:block/wizard_crucible"
+    },
+    "filled=true": {
+      "model": "call_from_myth:block/wizard_crucible_filled"
+    }
+  }
+}
