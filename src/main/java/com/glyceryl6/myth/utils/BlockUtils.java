@@ -31,7 +31,7 @@ public class BlockUtils {
 
     public static RegistryObject<Block> flowerPot(String name, RegistryObject<Block> block) {
         BlockBehaviour.Properties properties = BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noOcclusion();
-        return registerBlock(name, () -> new FlowerPotBlock(block.get(), properties));
+        return BlockRegistry.BLOCKS.register(name, () -> new FlowerPotBlock(block.get(), properties));
     }
 
     public static RegistryObject<Block> pressurePlate(String name, BlockBehaviour.Properties properties) {
