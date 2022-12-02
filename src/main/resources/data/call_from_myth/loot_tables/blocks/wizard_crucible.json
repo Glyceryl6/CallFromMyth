@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "call_from_myth:stone_crucible_bless"
+          "name": "call_from_myth:wizard_crucible"
         }
       ],
       "conditions": [
