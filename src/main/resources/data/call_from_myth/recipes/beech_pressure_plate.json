@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "call_from_myth:beech_planks"
+    }
+  },
+  "result": {
+    "item": "call_from_myth:beech_pressure_plate"
+  }
+}

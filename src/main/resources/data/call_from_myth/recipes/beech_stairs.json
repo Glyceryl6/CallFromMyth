@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "call_from_myth:beech_planks"
+    }
+  },
+  "result": {
+    "item": "call_from_myth:beech_stairs",
+    "count": 4
+  }
+}

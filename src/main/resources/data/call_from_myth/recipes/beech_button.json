@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "call_from_myth:beech_planks"
+    }
+  ],
+  "result": {
+    "item": "call_from_myth:beech_button"
+  }
+}
