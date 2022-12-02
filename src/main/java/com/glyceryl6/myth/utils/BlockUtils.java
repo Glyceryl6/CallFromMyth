@@ -14,8 +14,8 @@ import java.util.function.Supplier;
 @SuppressWarnings("deprecation")
 public class BlockUtils {
 
-    public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> register = BlockRegistry.BLOCKS.register(name, block);
+    public static RegistryObject<Block> registerBlock(String name, Supplier<Block> block) {
+        RegistryObject<Block> register = BlockRegistry.BLOCKS.register(name, block);
         Item.Properties properties = new Item.Properties().tab(ItemUtils.MYTH_TAB);
         ItemRegistry.ITEMS.register(name, () -> new BlockItem(register.get(), properties));
         return register;
