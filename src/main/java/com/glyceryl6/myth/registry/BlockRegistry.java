@@ -16,10 +16,8 @@ public class BlockRegistry {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CallFromMyth.MOD_ID);
 
-    public static final RegistryObject<Block> BEECH_LOG = registerBlock("beech_log",
-            () -> Blocks.log(MaterialColor.WOOD, MaterialColor.PODZOL));
-    public static final RegistryObject<Block> BEECH_LEAVE = registerBlock("beech_leaves",
-            () -> Blocks.leaves(SoundType.GRASS));
+    public static final RegistryObject<Block> BEECH_LOG = registerBlock("beech_log", () -> Blocks.log(MaterialColor.WOOD, MaterialColor.PODZOL));
+    public static final RegistryObject<Block> BEECH_LEAVE = registerBlock("beech_leaves", () -> Blocks.leaves(SoundType.GRASS));
 
     public static final RegistryObject<Block> BEECH_PLANKS = normal("beech_planks", copy(Blocks.OAK_PLANKS));
     public static final RegistryObject<Block> FINE_SILVER_BLOCK = normal("fine_silver_block", copy(Blocks.IRON_BLOCK));
@@ -37,14 +35,10 @@ public class BlockRegistry {
     public static final RegistryObject<Block> BEECH_SLAB = slab("beech_slab", copy(Blocks.OAK_SLAB));
     public static final RegistryObject<Block> BEECH_WALL = wall("beech_wall", copy(Blocks.OAK_PLANKS));
 
-    public static final RegistryObject<Block> DATURA = BLOCKS.register("datura",
-            () -> new DaturaBlock(defaultPlants(SoundType.CROP)));
-    public static final RegistryObject<Block> HENBANE = BLOCKS.register("henbane",
-            () -> new HenbaneBlock(defaultPlants(SoundType.CROP)));
-    public static final RegistryObject<Block> BELLADONNA = BLOCKS.register("belladonna",
-            () -> new BelladonnaBlock(defaultPlants(SoundType.CROP)));
-    public static final RegistryObject<Block> CHILI_PEPPER = BLOCKS.register("chili_pepper",
-            () -> new ChiliPepperBlock(defaultPlants(SoundType.CROP)));
+    public static final RegistryObject<Block> DATURA = BLOCKS.register("datura", () -> new DaturaBlock(defaultPlants(SoundType.CROP)));
+    public static final RegistryObject<Block> HENBANE = BLOCKS.register("henbane", () -> new HenbaneBlock(defaultPlants(SoundType.CROP)));
+    public static final RegistryObject<Block> BELLADONNA = BLOCKS.register("belladonna", () -> new BelladonnaBlock(defaultPlants(SoundType.CROP)));
+    public static final RegistryObject<Block> CHILI_PEPPER = BLOCKS.register("chili_pepper", () -> new ChiliPepperBlock(defaultPlants(SoundType.CROP)));
 
     public static final RegistryObject<Block> BEECH_SAPLING = registerBlock("beech_sapling",
             () -> new SaplingBlock(new BeechGrower(), defaultPlants(SoundType.GRASS)));

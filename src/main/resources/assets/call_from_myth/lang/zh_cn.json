@@ -16,10 +16,21 @@
   "block.call_from_myth.beech_planks": "山毛榉木板",
   "block.call_from_myth.beech_sapling": "山毛榉树苗",
   "block.call_from_myth.malachite_ore": "孔雀石矿",
-  "block.call_from_myth.fine_silver_ore": "纯银矿",
-  "block.call_from_myth.fine_silver_block": "纯银块",
   "block.call_from_myth.stone_crucible": "石头坩埚",
   "block.call_from_myth.wizard_crucible": "巫师坩埚",
+  "block.call_from_myth.fine_silver_ore": "纯银矿",
+  "block.call_from_myth.fine_silver_block": "纯银块",
+  "block.call_from_myth.potted_beech_sapling":"山毛榉树苗盆栽",
+
+  "block.call_from_myth.beech_pressure_plate":"山毛榉木压力板",
+  "block.call_from_myth.beech_fence_gate":"山毛榉木栅栏门",
+  "block.call_from_myth.beech_trapdoor":"山毛榉木活板门",
+  "block.call_from_myth.beech_stairs":"山毛榉木楼梯",
+  "block.call_from_myth.beech_button":"山毛榉木按钮",
+  "block.call_from_myth.beech_fence":"山毛榉木栅栏",
+  "block.call_from_myth.beech_slab":"山毛榉木台阶",
+  "block.call_from_myth.beech_door":"山毛榉木门",
+  "block.call_from_myth.beech_wall":"山毛榉木墙",
 
   "itemGroup.myth_tab": "神话的呼唤"
 }

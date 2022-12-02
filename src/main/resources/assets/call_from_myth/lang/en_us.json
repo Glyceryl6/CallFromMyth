@@ -16,10 +16,21 @@
   "block.call_from_myth.beech_planks": "Beech Planks",
   "block.call_from_myth.beech_sapling": "Beech Sapling",
   "block.call_from_myth.malachite_ore": "Malachite Ore",
-  "block.call_from_myth.fine_silver_ore": "Fine Silver Ore",
-  "block.call_from_myth.fine_silver_block": "Fine Silver Block",
   "block.call_from_myth.stone_crucible": "Stone Crucible",
   "block.call_from_myth.wizard_crucible": "Wizard Crucible",
+  "block.call_from_myth.fine_silver_ore": "Fine Silver Ore",
+  "block.call_from_myth.fine_silver_block": "Fine Silver Block",
+  "block.call_from_myth.potted_beech_sapling":"Potted Beech Sapling",
+
+  "block.call_from_myth.beech_pressure_plate":"Beech Pressure Plate",
+  "block.call_from_myth.beech_fence_gate":"Beech Fence Gate",
+  "block.call_from_myth.beech_trapdoor":"Beech Trapdoor",
+  "block.call_from_myth.beech_stairs":"Beech Stairs",
+  "block.call_from_myth.beech_button":"Beech Button",
+  "block.call_from_myth.beech_fence":"Beech Fence",
+  "block.call_from_myth.beech_slab":"Beech Slab",
+  "block.call_from_myth.beech_door":"Beech Door",
+  "block.call_from_myth.beech_wall":"Beech Wall",
 
   "itemGroup.myth_tab": "Call From Myth"
 }

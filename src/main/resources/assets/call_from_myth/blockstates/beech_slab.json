@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "call_from_myth:block/beech_slab"
+    },
+    "type=double": {
+      "model": "call_from_myth:block/beech_planks"
+    },
+    "type=top": {
+      "model": "call_from_myth:block/beech_slab_top"
+    }
+  }
+}
