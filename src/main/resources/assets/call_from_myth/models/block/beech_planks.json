@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "cross": "call_from_myth:block/beech_planks"
+  }
+}
