@@ -1,6 +1,7 @@
 package com.glyceryl6.myth.registry;
 
 import com.glyceryl6.myth.CallFromMyth;
+import com.glyceryl6.myth.items.GraftRodItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,5 +25,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> HENBANE_SEEDS = alias("henbane_seeds", BlockRegistry.HENBANE);
     public static final RegistryObject<Item> BELLADONNA_SEEDS = alias("belladonna_seeds", BlockRegistry.BELLADONNA);
     public static final RegistryObject<Item> CHILI_PEPPER_SEEDS = alias("chili_pepper_seeds", BlockRegistry.CHILI_PEPPER);
+
+    public static final RegistryObject<Item> GRAFT_ROD = ITEMS.register("graft_rod", () -> new GraftRodItem(new Item.Properties()));
 
 }
