@@ -3,6 +3,8 @@ package com.glyceryl6.myth.blocks.crops;
 import com.glyceryl6.myth.blocks.abstracts.Abstract3AgeCropBlock;
 import com.glyceryl6.myth.registry.ItemRegistry;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
@@ -20,6 +22,11 @@ public class DaturaBlock extends Abstract3AgeCropBlock {
 
     public DaturaBlock(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public Item getGrains() {
+        return ItemRegistry.DATURA.get();
     }
 
     @Override
