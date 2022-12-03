@@ -15,7 +15,7 @@
                   "condition": "minecraft:block_state_property",
                   "block": "call_from_myth:datura",
                   "properties": {
-                    "age": "7"
+                    "age": "3"
                   }
                 }
               ],
@@ -54,7 +54,7 @@
           "condition": "minecraft:block_state_property",
           "block": "call_from_myth:datura",
           "properties": {
-            "age": "7"
+            "age": "3"
           }
         }
       ]

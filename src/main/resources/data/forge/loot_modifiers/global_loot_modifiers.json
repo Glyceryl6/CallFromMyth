@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"entries": [
+		"call_from_myth:datura_seeds_from_grass",
+		"call_from_myth:datura_seeds_from_tall_grass",
+		"call_from_myth:henbane_seeds_from_grass",
+		"call_from_myth:henbane_seeds_from_tall_grass",
+		"call_from_myth:belladonna_seeds_from_grass",
+		"call_from_myth:belladonna_seeds_from_tall_grass",
+		"call_from_myth:chili_pepper_seeds_from_grass",
+		"call_from_myth:chili_pepper_seeds_from_tall_grass"
+	]
+}
