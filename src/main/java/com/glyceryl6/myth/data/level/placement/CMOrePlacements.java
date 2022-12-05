@@ -1,6 +1,6 @@
-package com.glyceryl6.myth.level.placement;
+package com.glyceryl6.myth.data.level.placement;
 
-import com.glyceryl6.myth.level.feature.CMOreFeatures;
+import com.glyceryl6.myth.data.level.feature.CMOreFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.placement.OrePlacements;
 import net.minecraft.data.worldgen.placement.PlacementUtils;

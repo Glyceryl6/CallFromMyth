@@ -11,6 +11,8 @@
   "item.call_from_myth.belladonna_seeds": "颠茄种子",
   "item.call_from_myth.chili_pepper_seeds": "辣椒种子",
 
+  "item.call_from_myth.hunter_spawn_egg": "猎人刷怪蛋",
+
   "block.call_from_myth.distiller": "蒸馏器",
   "block.call_from_myth.beech_log": "山毛榉木",
   "block.call_from_myth.beech_leaves": "山毛榉树叶",
@@ -32,6 +34,8 @@
   "block.call_from_myth.beech_slab":"山毛榉木台阶",
   "block.call_from_myth.beech_door":"山毛榉木门",
   "block.call_from_myth.beech_wall":"山毛榉木墙",
+
+  "entity.call_from_myth.hunter": "猎人",
 
   "itemGroup.myth_tab": "神话的呼唤"
 }

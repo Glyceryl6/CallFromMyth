@@ -1,4 +1,4 @@
-package com.glyceryl6.myth.level.feature;
+package com.glyceryl6.myth.data.level.feature;
 
 import com.glyceryl6.myth.registry.BlockRegistry;
 import net.minecraft.core.Holder;

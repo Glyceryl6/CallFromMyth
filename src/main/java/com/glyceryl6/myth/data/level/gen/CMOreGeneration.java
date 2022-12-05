@@ -1,7 +1,7 @@
-package com.glyceryl6.myth.level.gen;
+package com.glyceryl6.myth.data.level.gen;
 
 import com.glyceryl6.myth.CallFromMyth;
-import com.glyceryl6.myth.level.placement.CMOrePlacements;
+import com.glyceryl6.myth.data.level.placement.CMOrePlacements;
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;

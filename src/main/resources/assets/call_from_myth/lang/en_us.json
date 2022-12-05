@@ -11,6 +11,8 @@
   "item.call_from_myth.belladonna_seeds": "Belladonna Seeds",
   "item.call_from_myth.chili_pepper_seeds": "Chili Pepper Seeds",
 
+  "item.call_from_myth.hunter_spawn_egg": "Hunter Spawn Egg",
+
   "block.call_from_myth.distiller": "Distiller",
   "block.call_from_myth.beech_log": "Beech Log",
   "block.call_from_myth.beech_leaves": "Beech Leaves",
@@ -32,6 +34,8 @@
   "block.call_from_myth.beech_slab":"Beech Slab",
   "block.call_from_myth.beech_door":"Beech Door",
   "block.call_from_myth.beech_wall":"Beech Wall",
+
+  "entity.call_from_myth.hunter": "Hunter",
 
   "itemGroup.myth_tab": "Call From Myth"
 }

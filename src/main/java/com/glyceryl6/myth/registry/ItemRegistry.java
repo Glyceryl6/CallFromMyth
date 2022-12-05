@@ -7,8 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static com.glyceryl6.myth.utils.ItemUtils.alias;
-import static com.glyceryl6.myth.utils.ItemUtils.normal;
+import static com.glyceryl6.myth.utils.ItemUtils.*;
 
 public class ItemRegistry {
 
@@ -25,6 +24,8 @@ public class ItemRegistry {
     public static final RegistryObject<Item> HENBANE_SEEDS = alias("henbane_seeds", BlockRegistry.HENBANE);
     public static final RegistryObject<Item> BELLADONNA_SEEDS = alias("belladonna_seeds", BlockRegistry.BELLADONNA);
     public static final RegistryObject<Item> CHILI_PEPPER_SEEDS = alias("chili_pepper_seeds", BlockRegistry.CHILI_PEPPER);
+
+    public static final RegistryObject<Item> HUNTER_SPAWN_EGG = spawnEgg("hunter", EntityRegistry.HUNTER, 0x3b3a3a, 0xe7ac9a);
 
     public static final RegistryObject<Item> GRAFT_ROD = ITEMS.register("graft_rod", () -> new GraftRodItem(new Item.Properties()));
 
