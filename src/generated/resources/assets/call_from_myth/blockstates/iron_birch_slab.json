@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "call_from_myth:block/iron_birch_slab_top"
+    },
+    "type=bottom": {
+      "model": "call_from_myth:block/iron_birch_slab"
+    },
+    "type=double": {
+      "model": "call_from_myth:block/iron_birch_planks"
+    }
+  }
+}

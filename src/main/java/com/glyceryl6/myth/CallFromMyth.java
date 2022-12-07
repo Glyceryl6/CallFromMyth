@@ -37,10 +37,12 @@ public class CallFromMyth {
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.HENBANE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.BELLADONNA.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.CHILI_PEPPER.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.BEECH_LEAVES.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.BEECH_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.STONE_CRUCIBLE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.WIZARD_CRUCIBLE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.BEECH_LEAVE.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.IRON_BIRCH_LEAVES.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.IRON_BIRCH_SAPLING.get(), RenderType.cutout());
     }
 
     private void registerColors(FMLClientSetupEvent event) {

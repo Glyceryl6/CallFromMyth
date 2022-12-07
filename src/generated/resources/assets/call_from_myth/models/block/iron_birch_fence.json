@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "call_from_myth:block/iron_birch_planks"
+  }
+}

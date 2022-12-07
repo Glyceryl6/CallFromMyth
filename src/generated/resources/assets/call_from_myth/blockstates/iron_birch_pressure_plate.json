@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "call_from_myth:block/iron_birch_pressure_plate"
+    },
+    "powered=true": {
+      "model": "call_from_myth:block/iron_birch_pressure_plate_down"
+    }
+  }
+}

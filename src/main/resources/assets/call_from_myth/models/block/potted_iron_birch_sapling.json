@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "call_from_myth:block/iron_birch_sapling"
+  }
+}

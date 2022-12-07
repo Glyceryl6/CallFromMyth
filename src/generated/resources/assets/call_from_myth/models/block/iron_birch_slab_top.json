@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "side": "call_from_myth:block/iron_birch_planks",
+    "bottom": "call_from_myth:block/iron_birch_planks",
+    "top": "call_from_myth:block/iron_birch_planks"
+  }
+}

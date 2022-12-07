@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "call_from_myth:block/iron_birch_planks"
+  }
+}
