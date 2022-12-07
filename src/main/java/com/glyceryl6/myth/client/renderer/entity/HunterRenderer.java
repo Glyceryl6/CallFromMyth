@@ -2,7 +2,7 @@ package com.glyceryl6.myth.client.renderer.entity;
 
 import com.glyceryl6.myth.CallFromMyth;
 import com.glyceryl6.myth.client.model.HunterHatModel;
-import com.glyceryl6.myth.client.model.geom.CMModelLayers;
+import com.glyceryl6.myth.client.model.geom.CFMModelLayers;
 import com.glyceryl6.myth.client.renderer.entity.layers.HunterArmorLayer;
 import com.glyceryl6.myth.client.renderer.entity.layers.HunterHatLayer;
 import com.glyceryl6.myth.entity.monster.Hunter;
@@ -27,7 +27,7 @@ public class HunterRenderer extends LivingEntityRenderer<Hunter, PlayerModel<Hun
         super(context, new PlayerModel<>(context.bakeLayer(ModelLayers.PLAYER), false), 0.5F);
         this.addLayer(new ItemInHandLayer<>(this));
         this.addLayer(new HunterHatLayer<>(this,
-                new HunterHatModel<>(context.bakeLayer(CMModelLayers.HUNTER_HAT))));
+                new HunterHatModel<>(context.bakeLayer(CFMModelLayers.HUNTER_HAT))));
         this.addLayer(new HunterArmorLayer<>(this,
                 new HumanoidModel<>(context.bakeLayer(ModelLayers.ZOMBIE_INNER_ARMOR)),
                 new HumanoidModel<>(context.bakeLayer(ModelLayers.ZOMBIE_OUTER_ARMOR))));

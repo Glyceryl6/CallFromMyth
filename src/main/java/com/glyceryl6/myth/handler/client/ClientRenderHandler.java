@@ -2,7 +2,6 @@ package com.glyceryl6.myth.handler.client;
 
 import com.glyceryl6.myth.CallFromMyth;
 import com.glyceryl6.myth.blocks.entity.StoneCrucibleEntity;
-import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.core.BlockPos;
@@ -26,7 +25,6 @@ public class ClientRenderHandler {
         float angle = -90;
         Minecraft mc = Minecraft.getInstance();
         Entity entity = mc.getCameraEntity();
-        PoseStack poseStack = event.getMatrixStack();
         if (entity != null && mc.level != null) {
             int xc = mc.getWindow().getGuiScaledWidth() / 2;
             int yc = mc.getWindow().getGuiScaledHeight() / 2;
@@ -43,10 +41,7 @@ public class ClientRenderHandler {
                         double xPos = xc + Math.cos(angle * Math.PI / 180D) * 24 - 8;
                         double yPos = yc + Math.sin(angle * Math.PI / 180D) * 24 - 8;
                         if (!stack.isEmpty()) {
-                            String name = stack.getHoverName().getString();
-                            int x = (int)xPos - mc.font.width(name) / 2 + 8;
                             itemRenderer.renderGuiItem(stack, (int)xPos, (int)yPos - 16);
-                            mc.font.draw(poseStack, name, x, (int)yPos, 0xffffff);
                             angle += anglePer;
                         }
                     }

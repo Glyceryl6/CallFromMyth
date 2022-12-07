@@ -8,12 +8,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
-public class BeechGrower extends AbstractTreeGrower {
+public class IronBirchGrower extends AbstractTreeGrower {
 
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random random, boolean largeHive) {
-        return random.nextInt(10) == 0 ? CFMTreeFeatures.FANCY_BEECH : CFMTreeFeatures.BEECH;
+        return random.nextInt(10) == 0 ? CFMTreeFeatures.SUPER_IRON_BIRCH : CFMTreeFeatures.IRON_BIRCH;
     }
 
 }
