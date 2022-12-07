@@ -35,9 +35,6 @@ public class CFMBlockStateProvider extends BlockStateProvider {
                 this.blockTexture(CFMBlocks.IRON_BIRCH_PLANKS.get()));
         this.simpleBlockItem(CFMBlocks.IRON_BIRCH_PLANKS.get(), this.cubeAll(CFMBlocks.IRON_BIRCH_PLANKS.get()));
         this.simpleBlockItem(CFMBlocks.IRON_BIRCH_LEAVES.get(), this.cubeAll(CFMBlocks.IRON_BIRCH_LEAVES.get()));
-        this.simpleBlockItem(CFMBlocks.IRON_BIRCH_SAPLING.get(),
-                this.models().cross(CFMBlocks.IRON_BIRCH_SAPLING.get().getRegistryName().getPath(),
-                this.blockTexture(CFMBlocks.IRON_BIRCH_SAPLING.get())));
         this.simpleBlockItem(CFMBlocks.IRON_BIRCH_PRESSURE_PLATE.get(), this.models().pressurePlate(
                 CFMBlocks.IRON_BIRCH_PRESSURE_PLATE.get().getRegistryName().getPath(),
                 this.blockTexture(CFMBlocks.IRON_BIRCH_PLANKS.get())));
@@ -60,10 +57,6 @@ public class CFMBlockStateProvider extends BlockStateProvider {
                 this.blockTexture(CFMBlocks.IRON_BIRCH_PLANKS.get())));
         this.simpleBlockItem(CFMBlocks.IRON_BIRCH_WALL.get(), this.models().wallInventory(
                 CFMBlocks.IRON_BIRCH_WALL.get().getRegistryName().getPath(),
-                this.blockTexture(CFMBlocks.IRON_BIRCH_PLANKS.get())));
-        this.simpleBlockItem(CFMBlocks.IRON_BIRCH_DOOR.get(), this.models().doorBottomLeft(
-                CFMBlocks.IRON_BIRCH_DOOR.get().getRegistryName().getPath(),
-                this.blockTexture(CFMBlocks.IRON_BIRCH_PLANKS.get()),
                 this.blockTexture(CFMBlocks.IRON_BIRCH_PLANKS.get())));
         this.simpleBlockItem(CFMBlocks.IRON_BIRCH_SLAB.get(), this.models().slab(
                 CFMBlocks.IRON_BIRCH_SLAB.get().getRegistryName().getPath(),

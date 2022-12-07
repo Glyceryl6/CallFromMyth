@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom",
-  "textures": {
-    "bottom": "call_from_myth:block/iron_birch_planks",
-    "top": "call_from_myth:block/iron_birch_planks"
-  }
-}
