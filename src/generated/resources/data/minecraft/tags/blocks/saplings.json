@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "call_from_myth:iron_birch_sapling",
     "call_from_myth:beech_sapling"
   ]
 }

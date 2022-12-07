@@ -2,10 +2,9 @@
   "replace": false,
   "values": [
     "call_from_myth:distiller",
-    "call_from_myth:malachite_ore",
     "call_from_myth:fine_silver_ore",
     "call_from_myth:fine_silver_block",
     "call_from_myth:stone_crucible",
-    "call_from_myth:stone_crucible_bless"
+    "call_from_myth:wizard_crucible"
   ]
 }

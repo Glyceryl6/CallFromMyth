@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "call_from_myth:iron_birch_log",
     "call_from_myth:beech_log"
   ]
 }

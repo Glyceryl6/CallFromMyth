@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "call_from_myth:iron_birch_pressure_plate",
+    "call_from_myth:beech_pressure_plate"
+  ]
+}
