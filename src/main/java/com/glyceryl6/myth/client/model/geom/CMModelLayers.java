@@ -10,6 +10,7 @@ public class CMModelLayers {
 
     public static final ModelLayerLocation HUNTER = register("hunter");
     public static final ModelLayerLocation HUNTER_HAT = register("hunter_hat");
+    public static final ModelLayerLocation HUNTER_ARMOR = register("hunter_armor");
 
     private static ModelLayerLocation register(String path) {
         return new ModelLayerLocation(CallFromMyth.prefix(path), "main");

@@ -1,14 +1,17 @@
 package com.glyceryl6.myth.client.renderer.entity;
 
 import com.glyceryl6.myth.CallFromMyth;
+import com.glyceryl6.myth.client.model.HunterHatModel;
+import com.glyceryl6.myth.client.model.geom.CMModelLayers;
+import com.glyceryl6.myth.client.renderer.entity.layers.HunterArmorLayer;
 import com.glyceryl6.myth.client.renderer.entity.layers.HunterHatLayer;
 import com.glyceryl6.myth.entity.monster.Hunter;
-import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.model.geom.ModelLayers;
-import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
+import net.minecraft.client.renderer.entity.layers.ItemInHandLayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -22,17 +25,12 @@ public class HunterRenderer extends LivingEntityRenderer<Hunter, PlayerModel<Hun
 
     public HunterRenderer(EntityRendererProvider.Context context) {
         super(context, new PlayerModel<>(context.bakeLayer(ModelLayers.PLAYER), false), 0.5F);
-        this.addLayer(new HunterHatLayer<>(this, context.getModelSet()));
-    }
-
-    @Override
-    public void render(Hunter hunter, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
-        super.render(hunter, entityYaw, partialTicks, poseStack, buffer, packedLight);
-    }
-
-    @Override
-    protected void scale(Hunter hunter, PoseStack poseStack, float partialTickTime) {
-        poseStack.scale(0.9375F, 0.9375F, 0.9375F);
+        this.addLayer(new ItemInHandLayer<>(this));
+        this.addLayer(new HunterHatLayer<>(this,
+                new HunterHatModel<>(context.bakeLayer(CMModelLayers.HUNTER_HAT))));
+        this.addLayer(new HunterArmorLayer<>(this,
+                new HumanoidModel<>(context.bakeLayer(ModelLayers.ZOMBIE_INNER_ARMOR)),
+                new HumanoidModel<>(context.bakeLayer(ModelLayers.ZOMBIE_OUTER_ARMOR))));
     }
 
     @Override
@@ -44,7 +42,7 @@ public class HunterRenderer extends LivingEntityRenderer<Hunter, PlayerModel<Hun
     @Nonnull
     @Override
     public ResourceLocation getTextureLocation(Hunter hunter) {
-        return CallFromMyth.prefix("textures/entity/hunter.png");
+        return CallFromMyth.prefix("textures/entity/hunter/hunter.png");
     }
 
 }

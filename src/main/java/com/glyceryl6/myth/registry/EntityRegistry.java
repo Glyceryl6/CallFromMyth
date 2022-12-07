@@ -6,7 +6,6 @@ import com.glyceryl6.myth.client.model.geom.CMModelLayers;
 import com.glyceryl6.myth.client.renderer.entity.HunterRenderer;
 import com.glyceryl6.myth.entity.monster.Hunter;
 import net.minecraft.client.model.PlayerModel;
-import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.CubeDeformation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.world.entity.EntityType;
