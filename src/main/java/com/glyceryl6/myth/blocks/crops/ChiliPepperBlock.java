@@ -1,7 +1,7 @@
 package com.glyceryl6.myth.blocks.crops;
 
 import com.glyceryl6.myth.blocks.abstracts.Abstract5AgeCropBlock;
-import com.glyceryl6.myth.registry.ItemRegistry;
+import com.glyceryl6.myth.registry.CFMItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
@@ -27,12 +27,12 @@ public class ChiliPepperBlock extends Abstract5AgeCropBlock {
 
     @Override
     public Item getGrains() {
-        return ItemRegistry.CHILI_PEPPER.get();
+        return CFMItems.CHILI_PEPPER.get();
     }
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ItemRegistry.CHILI_PEPPER_SEEDS.get();
+        return CFMItems.CHILI_PEPPER_SEEDS.get();
     }
 
     @Override

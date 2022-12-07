@@ -2,8 +2,8 @@ package com.glyceryl6.myth.blocks;
 
 import com.glyceryl6.myth.blocks.abstracts.AbstractCrucibleBlock;
 import com.glyceryl6.myth.blocks.entity.StoneCrucibleEntity;
-import com.glyceryl6.myth.data.tags.item.CMItemTags;
-import com.glyceryl6.myth.registry.BlockEntityRegistry;
+import com.glyceryl6.myth.data.tags.item.CFMItemTags;
+import com.glyceryl6.myth.registry.CFMBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -46,7 +46,7 @@ public class StoneCrucibleBlock extends AbstractCrucibleBlock {
                 Containers.dropContents(level, pos, entity.getSeeds());
                 entity.getSeeds().clear();
                 return this.fillBucket(state, level, pos, player, hand, handHeld, waterBucket, (predicate) -> true);
-            } else if (handHeld.is(CMItemTags.CAN_INTERACT_CRUCIBLE) && !entity.hasSeed(handHeld.getItem())) {
+            } else if (handHeld.is(CFMItemTags.CAN_INTERACT_CRUCIBLE) && !entity.hasSeed(handHeld.getItem())) {
                 level.playSound(null, pos, SoundEvents.BUCKET_FILL, SoundSource.BLOCKS, 1.0F, 1.0F);
                 boolean flag = entity.canPutSeed(player.getAbilities().instabuild ? handHeld.copy() : handHeld);
                 return flag ? InteractionResult.SUCCESS : InteractionResult.CONSUME;
@@ -75,7 +75,7 @@ public class StoneCrucibleBlock extends AbstractCrucibleBlock {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
-        return createTickerHelper(blockEntityType, BlockEntityRegistry.STONE_CRUCIBLE_ENTITY.get(), StoneCrucibleEntity::serverTick);
+        return createTickerHelper(blockEntityType, CFMBlockEntity.STONE_CRUCIBLE_ENTITY.get(), StoneCrucibleEntity::serverTick);
     }
 
     @Override

@@ -2,7 +2,7 @@ package com.glyceryl6.myth.registry;
 
 import com.glyceryl6.myth.CallFromMyth;
 import com.glyceryl6.myth.client.model.HunterHatModel;
-import com.glyceryl6.myth.client.model.geom.CMModelLayers;
+import com.glyceryl6.myth.client.model.geom.CFMModelLayers;
 import com.glyceryl6.myth.client.renderer.entity.HunterRenderer;
 import com.glyceryl6.myth.entity.monster.Hunter;
 import net.minecraft.client.model.PlayerModel;
@@ -21,7 +21,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 @Mod.EventBusSubscriber(modid = CallFromMyth.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class EntityRegistry {
+public class CFMEntity {
 
     public static final DeferredRegister<EntityType<?>> ENTITY = DeferredRegister.create(ForgeRegistries.ENTITIES, CallFromMyth.MOD_ID);
 
@@ -36,8 +36,8 @@ public class EntityRegistry {
 
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(CMModelLayers.HUNTER, () -> LayerDefinition.create(PlayerModel.createMesh(CubeDeformation.NONE, false), 64, 64));
-        event.registerLayerDefinition(CMModelLayers.HUNTER_HAT, HunterHatModel::createBodyLayer);
+        event.registerLayerDefinition(CFMModelLayers.HUNTER, () -> LayerDefinition.create(PlayerModel.createMesh(CubeDeformation.NONE, false), 64, 64));
+        event.registerLayerDefinition(CFMModelLayers.HUNTER_HAT, HunterHatModel::createBodyLayer);
     }
 
     @SubscribeEvent

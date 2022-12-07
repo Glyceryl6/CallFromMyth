@@ -23,33 +23,33 @@ public class CallFromMyth {
     public IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
     public CallFromMyth() {
-        ItemRegistry.ITEMS.register(this.eventBus);
-        BlockRegistry.BLOCKS.register(this.eventBus);
-        EntityRegistry.ENTITY.register(this.eventBus);
-        BlockEntityRegistry.BLOCK_ENTITY.register(this.eventBus);
+        CFMItems.ITEMS.register(this.eventBus);
+        CFMBlocks.BLOCKS.register(this.eventBus);
+        CFMEntity.ENTITY.register(this.eventBus);
+        CFMBlockEntity.BLOCK_ENTITY.register(this.eventBus);
         this.eventBus.addListener(this::registerRenderLayer);
         this.eventBus.addListener(this::registerColors);
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void registerRenderLayer(FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.DATURA.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.HENBANE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.BELLADONNA.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.CHILI_PEPPER.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.BEECH_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.BEECH_SAPLING.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.STONE_CRUCIBLE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.WIZARD_CRUCIBLE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.IRON_BIRCH_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.IRON_BIRCH_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.DATURA.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.HENBANE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.BELLADONNA.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.CHILI_PEPPER.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.BEECH_LEAVES.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.BEECH_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.STONE_CRUCIBLE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.WIZARD_CRUCIBLE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.IRON_BIRCH_LEAVES.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(CFMBlocks.IRON_BIRCH_SAPLING.get(), RenderType.cutout());
     }
 
     private void registerColors(FMLClientSetupEvent event) {
         Minecraft minecraft = Minecraft.getInstance();
         BlockColors blockColors = minecraft.getBlockColors();
         blockColors.register((state, level, pos, tintIndex) ->
-                0x74979f, BlockRegistry.WIZARD_CRUCIBLE.get());
+                0x74979f, CFMBlocks.WIZARD_CRUCIBLE.get());
         blockColors.register((state, level, pos, tintIndex) -> {
             int liquidColor = 0xffffff;
             if (level != null && pos != null && tintIndex == 0) {
@@ -65,7 +65,7 @@ public class CallFromMyth {
                 }
             }
             return liquidColor;
-        }, BlockRegistry.STONE_CRUCIBLE.get());
+        }, CFMBlocks.STONE_CRUCIBLE.get());
     }
 
     public static ResourceLocation prefix(String name) {

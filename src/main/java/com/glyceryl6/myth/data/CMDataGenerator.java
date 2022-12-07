@@ -1,8 +1,9 @@
 package com.glyceryl6.myth.data;
 
 import com.glyceryl6.myth.CallFromMyth;
-import com.glyceryl6.myth.data.provider.CMBlockStateProvider;
-import com.glyceryl6.myth.data.provider.CMLootTableProvider;
+import com.glyceryl6.myth.data.provider.CFMBlockStateProvider;
+import com.glyceryl6.myth.data.provider.CFMBlockTagsProvider;
+import com.glyceryl6.myth.data.provider.CFMLootTableProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,9 +16,10 @@ public class CMDataGenerator {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
-        ExistingFileHelper exFileHelper = event.getExistingFileHelper();
-        generator.addProvider(new CMBlockStateProvider(generator, exFileHelper));
-        generator.addProvider(new CMLootTableProvider(generator));
+        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        generator.addProvider(new CFMBlockStateProvider(generator, existingFileHelper));
+        generator.addProvider(new CFMBlockTagsProvider(generator, existingFileHelper));
+        generator.addProvider(new CFMLootTableProvider(generator));
     }
 
 }

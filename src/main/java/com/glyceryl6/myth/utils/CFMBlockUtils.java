@@ -1,7 +1,7 @@
 package com.glyceryl6.myth.utils;
 
-import com.glyceryl6.myth.registry.BlockRegistry;
-import com.glyceryl6.myth.registry.ItemRegistry;
+import com.glyceryl6.myth.registry.CFMBlocks;
+import com.glyceryl6.myth.registry.CFMItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -12,12 +12,12 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 @SuppressWarnings("deprecation")
-public class BlockUtils {
+public class CFMBlockUtils {
 
     public static RegistryObject<Block> registerBlock(String name, Supplier<Block> block) {
-        RegistryObject<Block> register = BlockRegistry.BLOCKS.register(name, block);
-        Item.Properties properties = new Item.Properties().tab(ItemUtils.MYTH_TAB);
-        ItemRegistry.ITEMS.register(name, () -> new BlockItem(register.get(), properties));
+        RegistryObject<Block> register = CFMBlocks.BLOCKS.register(name, block);
+        Item.Properties properties = new Item.Properties().tab(CFMItemUtils.MYTH_TAB);
+        CFMItems.ITEMS.register(name, () -> new BlockItem(register.get(), properties));
         return register;
     }
 
@@ -31,7 +31,7 @@ public class BlockUtils {
 
     public static RegistryObject<Block> flowerPot(String name, RegistryObject<Block> block) {
         BlockBehaviour.Properties properties = BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noOcclusion();
-        return BlockRegistry.BLOCKS.register(name, () -> new FlowerPotBlock(block.get(), properties));
+        return CFMBlocks.BLOCKS.register(name, () -> new FlowerPotBlock(block.get(), properties));
     }
 
     public static RegistryObject<Block> pressurePlate(String name, BlockBehaviour.Properties properties) {

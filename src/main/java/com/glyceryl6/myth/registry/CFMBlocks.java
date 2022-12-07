@@ -4,29 +4,28 @@ import com.glyceryl6.myth.CallFromMyth;
 import com.glyceryl6.myth.blocks.*;
 import com.glyceryl6.myth.blocks.crops.*;
 import com.glyceryl6.myth.blocks.grower.BeechGrower;
+import com.glyceryl6.myth.blocks.grower.IronBirchGrower;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.*;
 
-import static com.glyceryl6.myth.utils.BlockUtils.*;
+import static com.glyceryl6.myth.utils.CFMBlockUtils.*;
 
-public class BlockRegistry {
+public class CFMBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CallFromMyth.MOD_ID);
 
     public static final RegistryObject<Block> IRON_BIRCH_LOG = registerBlock("iron_birch_log", () -> Blocks.log(MaterialColor.WOOD, MaterialColor.PODZOL));
     public static final RegistryObject<Block> IRON_BIRCH_LEAVES = registerBlock("iron_birch_leaves", () -> Blocks.leaves(SoundType.GRASS));
+    public static final RegistryObject<Block> IRON_BIRCH_PLANKS = normal("iron_birch_planks", copy(Blocks.BIRCH_PLANKS));
 
     public static final RegistryObject<Block> BEECH_LOG = registerBlock("beech_log", () -> Blocks.log(MaterialColor.WOOD, MaterialColor.PODZOL));
     public static final RegistryObject<Block> BEECH_LEAVES = registerBlock("beech_leaves", () -> Blocks.leaves(SoundType.GRASS));
-
-    public static final RegistryObject<Block> IRON_BIRCH_PLANKS = normal("iron_birch_planks", copy(Blocks.BIRCH_PLANKS));
     public static final RegistryObject<Block> BEECH_PLANKS = normal("beech_planks", copy(Blocks.OAK_PLANKS));
-    public static final RegistryObject<Block> FINE_SILVER_BLOCK = normal("fine_silver_block", copy(Blocks.IRON_BLOCK));
 
-    public static final RegistryObject<Block> MALACHITE_ORE = ore("malachite_ore", copy(Blocks.STONE));
+    public static final RegistryObject<Block> FINE_SILVER_BLOCK = normal("fine_silver_block", copy(Blocks.IRON_BLOCK));
     public static final RegistryObject<Block> FINE_SILVER_ORE = ore("fine_silver_ore", copy(Blocks.STONE));
 
     public static final RegistryObject<Block> BEECH_PRESSURE_PLATE = pressurePlate("beech_pressure_plate", copy(Blocks.OAK_PRESSURE_PLATE));
@@ -55,7 +54,7 @@ public class BlockRegistry {
     public static final RegistryObject<Block> CHILI_PEPPER = BLOCKS.register("chili_pepper", () -> new ChiliPepperBlock(defaultPlants(SoundType.CROP)));
 
     public static final RegistryObject<Block> IRON_BIRCH_SAPLING = registerBlock("iron_birch_sapling",
-            () -> new SaplingBlock(new BeechGrower(), defaultPlants(SoundType.GRASS)));
+            () -> new SaplingBlock(new IronBirchGrower(), defaultPlants(SoundType.GRASS)));
     public static final RegistryObject<Block> BEECH_SAPLING = registerBlock("beech_sapling",
             () -> new SaplingBlock(new BeechGrower(), defaultPlants(SoundType.GRASS)));
     public static final RegistryObject<Block> STONE_CRUCIBLE = registerBlock("stone_crucible",

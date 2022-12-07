@@ -1,7 +1,7 @@
 package com.glyceryl6.myth.blocks.crops;
 
 import com.glyceryl6.myth.blocks.abstracts.Abstract3AgeCropBlock;
-import com.glyceryl6.myth.registry.ItemRegistry;
+import com.glyceryl6.myth.registry.CFMItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
@@ -25,12 +25,12 @@ public class HenbaneBlock extends Abstract3AgeCropBlock {
 
     @Override
     public Item getGrains() {
-        return ItemRegistry.HENBANE.get();
+        return CFMItems.HENBANE.get();
     }
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ItemRegistry.HENBANE_SEEDS.get();
+        return CFMItems.HENBANE_SEEDS.get();
     }
 
     @Override

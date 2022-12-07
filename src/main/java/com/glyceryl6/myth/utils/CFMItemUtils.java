@@ -1,6 +1,6 @@
 package com.glyceryl6.myth.utils;
 
-import com.glyceryl6.myth.registry.ItemRegistry;
+import com.glyceryl6.myth.registry.CFMItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.CreativeModeTab;
@@ -14,18 +14,18 @@ import net.minecraftforge.registries.RegistryObject;
 import javax.annotation.Nonnull;
 import java.util.function.Supplier;
 
-public class ItemUtils {
+public class CFMItemUtils {
 
     public static RegistryObject<Item> normal(String name) {
-        return ItemRegistry.ITEMS.register(name, () -> new Item(defaultBuilder()));
+        return CFMItems.ITEMS.register(name, () -> new Item(defaultBuilder()));
     }
 
     public static RegistryObject<Item> alias(String name, RegistryObject<Block> block) {
-        return ItemRegistry.ITEMS.register(name, () -> new ItemNameBlockItem(block.get(), defaultBuilder()));
+        return CFMItems.ITEMS.register(name, () -> new ItemNameBlockItem(block.get(), defaultBuilder()));
     }
 
     public static RegistryObject<Item> spawnEgg(String name, Supplier<? extends EntityType<? extends Mob>> type, int backgroundColor, int highlightColor) {
-        return ItemRegistry.ITEMS.register(name + "_spawn_egg", () -> new ForgeSpawnEggItem(type, backgroundColor, highlightColor, defaultBuilder()));
+        return CFMItems.ITEMS.register(name + "_spawn_egg", () -> new ForgeSpawnEggItem(type, backgroundColor, highlightColor, defaultBuilder()));
     }
 
     private static Item.Properties defaultBuilder() {
@@ -36,7 +36,7 @@ public class ItemUtils {
         @Nonnull
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ItemRegistry.BEECH_NUT.get());
+            return new ItemStack(CFMItems.BEECH_NUT.get());
         }
     };
 

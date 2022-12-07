@@ -1,8 +1,8 @@
 package com.glyceryl6.myth.blocks.entity;
 
 import com.glyceryl6.myth.blocks.StoneCrucibleBlock;
-import com.glyceryl6.myth.registry.BlockEntityRegistry;
-import com.glyceryl6.myth.registry.BlockRegistry;
+import com.glyceryl6.myth.registry.CFMBlockEntity;
+import com.glyceryl6.myth.registry.CFMBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.particles.ParticleTypes;
@@ -32,7 +32,7 @@ public class StoneCrucibleEntity extends BlockEntity {
     public int transformTicks;
 
     public StoneCrucibleEntity(BlockPos worldPosition, BlockState state) {
-        super(BlockEntityRegistry.STONE_CRUCIBLE_ENTITY.get(), worldPosition, state);
+        super(CFMBlockEntity.STONE_CRUCIBLE_ENTITY.get(), worldPosition, state);
     }
 
     public NonNullList<ItemStack> getSeeds() {
@@ -75,7 +75,7 @@ public class StoneCrucibleEntity extends BlockEntity {
                             }
                         } else {
                             entity.seeds.clear();
-                            Block block = BlockRegistry.WIZARD_CRUCIBLE.get();
+                            Block block = CFMBlocks.WIZARD_CRUCIBLE.get();
                             level.setBlockAndUpdate(pos, block.defaultBlockState());
                         }
                     } else {

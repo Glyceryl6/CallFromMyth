@@ -6,9 +6,9 @@ import net.minecraft.data.recipes.RecipeProvider;
 
 import java.util.function.Consumer;
 
-public class CMRecipeProvider extends RecipeProvider {
+public class CFMRecipeProvider extends RecipeProvider {
 
-    public CMRecipeProvider(DataGenerator generator) {
+    public CFMRecipeProvider(DataGenerator generator) {
         super(generator);
     }
 
@@ -16,6 +16,5 @@ public class CMRecipeProvider extends RecipeProvider {
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> finishedRecipeConsumer) {
 
     }
-
 
 }
