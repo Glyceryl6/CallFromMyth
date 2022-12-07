@@ -1,6 +1,6 @@
 package com.glyceryl6.myth.data.provider;
 
-import com.glyceryl6.myth.data.loot.CMBlockLoot;
+import com.glyceryl6.myth.data.loot.CFMBlockLoot;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.data.DataGenerator;
@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 public class CFMLootTableProvider extends LootTableProvider {
 
     private final List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>>
-            LOOT_TABLES = ImmutableList.of(Pair.of(CMBlockLoot::new, LootContextParamSets.BLOCK));
+            LOOT_TABLES = ImmutableList.of(Pair.of(CFMBlockLoot::new, LootContextParamSets.BLOCK));
 
     public CFMLootTableProvider(DataGenerator generator) {
         super(generator);
