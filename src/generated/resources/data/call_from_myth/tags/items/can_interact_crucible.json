@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "call_from_myth:datura_seeds",
+    "call_from_myth:henbane_seeds",
+    "call_from_myth:belladonna_seeds",
+    "call_from_myth:chili_pepper_seeds"
+  ]
+}

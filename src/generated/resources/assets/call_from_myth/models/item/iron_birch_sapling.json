@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "call_from_myth:block/iron_birch_sapling"
-  }
-}

@@ -15,10 +15,11 @@ public class CFMDataGenerator {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        CFMBlockTagsProvider blockTagsProvider = new CFMBlockTagsProvider(generator, existingFileHelper);
+        generator.addProvider(new CFMItemTagsProvider(generator, blockTagsProvider, existingFileHelper));
         generator.addProvider(new CFMBlockStateProvider(generator, existingFileHelper));
-        generator.addProvider(new CFMBlockTagsProvider(generator, existingFileHelper));
-        //generator.addProvider(new CFMItemModelProvider(generator, existingFileHelper));
         generator.addProvider(new CFMLootTableProvider(generator));
+        generator.addProvider(blockTagsProvider);
     }
 
 }
